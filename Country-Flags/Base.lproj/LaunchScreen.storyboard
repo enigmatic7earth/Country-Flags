@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JGc-PJ-y7L">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JGc-PJ-y7L" secondAttribute="height" multiplier="1:1" id="hDB-qU-5ky"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift-icon" translatesAutoresizingMaskIntoConstraints="NO" id="KM6-0L-tZc">
+                                <rect key="frame" x="37" y="155" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="9dq-Uv-wGJ"/>
+                                    <constraint firstAttribute="width" constant="20" id="fjg-FG-mA5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Flags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXb-oH-t6l">
+                                <rect key="frame" x="112.5" y="503" width="150.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flag Icons made by Freepik from www.flaticon.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaM-fN-0g2">
+                                <rect key="frame" x="23.5" y="650" width="328" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zaM-fN-0g2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="E9B-tu-Te0"/>
+                            <constraint firstItem="zaM-fN-0g2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FP4-bl-JAb"/>
+                            <constraint firstItem="JGc-PJ-y7L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GPO-xV-Tuo"/>
+                            <constraint firstItem="KM6-0L-tZc" firstAttribute="leading" secondItem="JGc-PJ-y7L" secondAttribute="leading" id="Sb3-OU-UBK"/>
+                            <constraint firstItem="BXb-oH-t6l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U4p-ff-qr0"/>
+                            <constraint firstItem="JGc-PJ-y7L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UEP-VR-Wwt"/>
+                            <constraint firstItem="JGc-PJ-y7L" firstAttribute="top" secondItem="KM6-0L-tZc" secondAttribute="bottom" constant="8" id="gc4-2Z-osE"/>
+                            <constraint firstItem="JGc-PJ-y7L" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.8" id="mSR-Zx-hfG"/>
+                            <constraint firstItem="BXb-oH-t6l" firstAttribute="top" secondItem="JGc-PJ-y7L" secondAttribute="bottom" constant="20" id="ubg-7K-KlZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="512" height="512"/>
+        <image name="swift-icon" width="512" height="512"/>
+    </resources>
+</document>
