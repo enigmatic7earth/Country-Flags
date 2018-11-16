@@ -12,7 +12,7 @@
 		F362441521660B6E00726D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F362441321660B6E00726D92 /* Main.storyboard */; };
 		F362441721660B7000726D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F362441621660B7000726D92 /* Assets.xcassets */; };
 		F362441A21660B7000726D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F362441821660B7000726D92 /* LaunchScreen.storyboard */; };
-		F3624426216618C000726D92 /* counrtyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3624425216618BF00726D92 /* counrtyList.plist */; };
+		F3624426216618C000726D92 /* countryList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3624425216618BF00726D92 /* countryList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		F362441621660B7000726D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F362441921660B7000726D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F362441B21660B7000726D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3624425216618BF00726D92 /* counrtyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = counrtyList.plist; sourceTree = "<group>"; };
+		F3624425216618BF00726D92 /* countryList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = countryList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				F362441621660B7000726D92 /* Assets.xcassets */,
 				F362441821660B7000726D92 /* LaunchScreen.storyboard */,
 				F362441B21660B7000726D92 /* Info.plist */,
-				F3624425216618BF00726D92 /* counrtyList.plist */,
+				F3624425216618BF00726D92 /* countryList.plist */,
 			);
 			path = "Country-Flags";
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 				F362441A21660B7000726D92 /* LaunchScreen.storyboard in Resources */,
 				F362441721660B7000726D92 /* Assets.xcassets in Resources */,
 				F362441521660B6E00726D92 /* Main.storyboard in Resources */,
-				F3624426216618C000726D92 /* counrtyList.plist in Resources */,
+				F3624426216618C000726D92 /* countryList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var countryArray = [[String: String]]()
+    var countryArray = [[AnyHashable: AnyHashable]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let url = Bundle.main.url(forResource: "counrtyList", withExtension: "plist")!
+        let url = Bundle.main.url(forResource: "countryList", withExtension: "plist")!
         let plistData = try! Data(contentsOf: url)
-        countryArray = try! PropertyListSerialization.propertyList(from: plistData, options: [], format: nil) as! [[String : String]]
+        countryArray = try! PropertyListSerialization.propertyList(from: plistData, options: [], format: nil) as! [[AnyHashable : AnyHashable]]
 
     }
 
@@ -109,6 +109,9 @@ class ViewController: UIViewController {
         case "BJ": // Benin
             flagIcon = UIImage(named: "benin")
             break
+        case "BL": // Saint Barthélemy
+            flagIcon = UIImage(named: "saint-barthelemy")
+            break
         case "BM": // Bermuda
             flagIcon = UIImage(named: "bermuda")
             break
@@ -190,8 +193,14 @@ class ViewController: UIViewController {
         case "CU": // Cuba
             flagIcon = UIImage(named: "cuba")
             break
+        case "CW": // Curaçao
+            flagIcon = UIImage(named: "curacao")
+            break
         case "CY": // Cyprus
             flagIcon = UIImage(named: "cyprus")
+            break
+        case "CYP": // Northern Cyprus
+            flagIcon = UIImage(named: "northern-cyprus")
             break
         case "CZ": // Czech Republic
             flagIcon = UIImage(named: "czech-republic")
@@ -283,6 +292,9 @@ class ViewController: UIViewController {
         case "GE": // Georgia
             flagIcon = UIImage(named: "georgia")
             break
+        case "GG": // Guernsey
+            flagIcon = UIImage(named: "guernsey")
+            break
         case "GR": // Greece
             flagIcon = UIImage(named: "greece")
             break
@@ -346,8 +358,17 @@ class ViewController: UIViewController {
         case "IR": // Iran
             flagIcon = UIImage(named: "iran")
             break
+        case "IS": // Iceland
+            flagIcon = UIImage(named: "iceland")
+            break
+        case "IM": // Isle of Man
+            flagIcon = UIImage(named: "isle-of-man")
+            break
         case "IT": // Italy
             flagIcon = UIImage(named: "italy")
+            break
+        case "JE": // Jersey
+            flagIcon = UIImage(named: "jersey")
             break
         case "JM": // Jamaica
             flagIcon = UIImage(named: "jamaica")
@@ -360,6 +381,9 @@ class ViewController: UIViewController {
             break
         case "KE": // Kenya
             flagIcon = UIImage(named: "kenya")
+            break
+        case "XK": // Kosovo
+            flagIcon = UIImage(named: "kosovo")
             break
         case "KG": // Kyrgyzstan
             flagIcon = UIImage(named: "kyrgyzstan")
@@ -604,6 +628,12 @@ class ViewController: UIViewController {
         case "SN": // Senegal
             flagIcon = UIImage(named: "senegal")
             break
+        case "SX": // Sint Maarteen
+            flagIcon = UIImage(named: "sint-maarten")
+            break
+        case "MF": // Saint Martin
+            flagIcon = UIImage(named: "sint-maarten")
+            break
         case "RS": // Serbia
             flagIcon = UIImage(named: "serbia")
             break
@@ -636,6 +666,9 @@ class ViewController: UIViewController {
             break
         case "SD": // Sudan
             flagIcon = UIImage(named: "sudan")
+            break
+        case "SS": // South Sudan
+            flagIcon = UIImage(named: "south-sudan")
             break
         case "SR": // Suriname
             flagIcon = UIImage(named: "suriname")
@@ -718,7 +751,7 @@ class ViewController: UIViewController {
         case "UM": // United States Minor Outlying Islands
             flagIcon = UIImage(named: "united-states")
             break
-        case "UR": // Uruguay
+        case "UY": // Uruguay
             flagIcon = UIImage(named: "uruguay")
             break
         case "UZ": // Uzbekistan
@@ -730,7 +763,7 @@ class ViewController: UIViewController {
         case "VA": // Vatican City State
             flagIcon = UIImage(named: "vatican-city")
             break
-        case "VZ": // Venezuela
+        case "VE": // Venezuela
             flagIcon = UIImage(named: "venezuela")
             break
         case "VG": // Virgin Islands (British)
@@ -790,9 +823,9 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
         
         let obj = countryArray[indexPath.row] as NSDictionary
         
-        cell?.textLabel?.text = obj.value(forKey: "name") as? String
-        cell?.detailTextLabel?.text = obj.value(forKey: "initials") as? String
-        cell?.imageView?.image = self.getFlagIcon(initials: cell?.detailTextLabel?.text as Any)
+        cell?.textLabel?.text = obj.value(forKey: "CountryName") as? String
+        cell?.detailTextLabel?.text = obj.value(forKey: "CountryCode") as? String
+        cell?.imageView?.image = self.getFlagIcon(initials: cell?.detailTextLabel?.text as? Any)
         
         return cell!
     }
