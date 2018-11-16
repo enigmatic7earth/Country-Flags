@@ -825,7 +825,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
         
         cell?.textLabel?.text = obj.value(forKey: "CountryName") as? String
         cell?.detailTextLabel?.text = obj.value(forKey: "CountryCode") as? String
-        cell?.imageView?.image = self.getFlagIcon(initials: cell?.detailTextLabel?.text as? Any)
+        cell?.imageView?.image = self.getFlagIcon(initials: cell?.detailTextLabel?.text as Any)
         
         return cell!
     }
